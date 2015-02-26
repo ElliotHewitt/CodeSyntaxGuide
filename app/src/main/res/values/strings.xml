@@ -178,6 +178,14 @@
                                   \n ^= = Bitwise exclusive OR
                                   \n |= = Bitwise inclusive OR\n</string>
 
+    <string name="while_cplusplus">\nwhile(condition)\n{\n\tstatement(s);\n}\n</string>
+
+    <string name="while_csharp">\nwhile(condition)\n{\n\tstatement(s);\n}\n</string>
+
+    <string name="while_python">\nwhile expression\n\tstatement(s)\n</string>
+
+    <string name="while_java">\nwhile(expression)\n{\n\tstatement(s)\n}\n</string>
+
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="green">#397D02</color>
@@ -188,12 +196,12 @@
 
     <string name="title_activity_if">IF</string>
     <string name="title_activity_elseif">ELSEIF</string>
-    <string name="title_activity_while">WHILE</string>
+    <string name="title_activity_while"><b>WHILE\n</b></string>
     <string name="title_activity_dowhile">DOWHILE</string>
     <string name="title_activity_switch">SWITCH</string>
     <string name="title_activity_types">TYPES</string>
     <string name="title_activity_printing">PRINTING</string>
-    <string name="title_activity_operators">OPERATORS</string>
+    <string name="title_activity_operators"><b>OPERATORS\n</b></string>
     <string name="title_activity_classes">CLASSES</string>
     <string name="title_activity_namespaces">NAMESPACES</string>
     <string name="title_activity_include">INCLUDE</string>
