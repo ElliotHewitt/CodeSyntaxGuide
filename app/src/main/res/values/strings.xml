@@ -26,7 +26,7 @@
                                 \nbool - binary true/false value
                                 \nvoid - null value\n</string>
 
-    <string name="types_python">\nPython doesn't require you to define variable types\n</string>
+    <string name="types_python">\nPython doesn\'t require you to define variable types\n</string>
 
     <string name="types_java">\nchar - single byte of data
                               \nint - 32 bit integer
@@ -47,16 +47,16 @@
 
     <string name="activity_include">\nThe main purpose behind the include directive is that it allows libraries of code to be developed which help to ensure that
                                     everyone uses the same version of a data layout definition or procedural code throughout a program.\n\nFor example in C/C++ we use
-                                    :\n#include &lt;stdio.h&gt;" // This includes the content of the standard header 'stdio.h'.\n\nWithin PHP the include directive causes another
+                                    :\n#include &lt;stdio.h&gt;" // This includes the content of the standard header \'stdio.h\'.\n\nWithin PHP the include directive causes another
                                     PHP file to be included and evaluated.\n\nModern languages such as Java and C# do not use forward declarations, instead identifiers are recognised
                                     automatically from source files and read directly form dynamic library symbols, meaning header files are not needed."</string>
 
-    <string name="operators_csharp">\n = - Using a single equals assigns a value
+    <string name="operators_csharp" formatted= "false">\n = - Using a single equals assigns a value
                                     \n == - Using two equals in succession tests values for equality
                                     \n != - Tests values for inequality
                                     \n * - Multiplication
                                     \n / - Division
-                                    \n % - The modulus returns the remainder of a division
+                                    \n &#37; - The modulus returns the remainder of a division
                                     \n + - Addition
                                     \n - - Subtraction
                                     \n &amp; - Logical AND
@@ -75,11 +75,11 @@
                                     \n &gt;= - Greater than or equal to
                                     \n &lt;= - Less than or equal to\n</string>
 
-    <string name="operators_cplusplus">\n + - Addition
+    <string name="operators_cplusplus" formatted= "false">\n + - Addition
                                        \n - - Subtraction
                                        \n * - Multiplication
                                        \n / - Division
-                                       \n % - The modulus returns the remainder of a division
+                                       \n &#37; - The modulus returns the remainder of a division
                                        \n ++ - Increment variable by 1
                                        \n &#8211;&#8211; - Decrement variable by 1
                                        \n == - Using two equals in succession tests values for equality
@@ -94,7 +94,7 @@
                                        \n &amp; - Binary AND Operator copies a bit to the result if it exists in both operands
                                        \n ^ - Binary XOR Operator copies the bit if it is set in one operand but not both
                                        \n | - Binary AND Operator copies a bit to the result if it exists in both operands
-                                       \n ~ - Binary Ones Complement Operator is unary and has the effect of 'flipping' bits
+                                       \n ~ - Binary Ones Complement Operator is unary and has the effect of \'flipping\' bits
                                        \n &lt;&lt; - Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand
                                        \n &gt;&gt; - Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand
                                        \n = - Using a single equals assigns a value
@@ -108,7 +108,7 @@
                                        \n ^= = Bitwise exclusive OR
                                        \n |= = Bitwise inclusive OR\n</string>
 
-    <string name="operators_python">\n + - Addition
+    <string name="operators_python" formatted= "false">\n + - Addition
                                     \n - - Subtraction
                                     \n * - Multiplication
                                     \n / - Division
@@ -126,13 +126,13 @@
                                     \n *= - Multiply variable by n
                                     \n -= - Subtract n from a variable
                                     \n /= - Divides n with a variable
-                                    \n %= - Takes the modulus using two operands and assign the result to left operand
+                                    \n &#37;= - Takes the modulus using two operands and assign the result to left operand
                                     \n **= - Performs exponential (power) calculation on operators and assign value to the left operand
                                     \n //= - Performs floor division on operators and assign value to the left operand
                                     \n &amp; - Binary AND Operator copies a bit to the result if it exists in both operands
                                     \n | - Binary OR Operator copies a bit if it exists in either operand
                                     \n ^ - Binary XOR Operator copies the bit if it is set in one operand but not both
-                                    \n ~ - Binary Ones Complement Operator is unary and has the effect of 'flipping' bits
+                                    \n ~ - Binary Ones Complement Operator is unary and has the effect of \'flipping\' bits
                                     \n &lt;&lt; - Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand
                                     \n &gt;&gt; - Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand
                                     \n and - Logical AND
@@ -143,11 +143,11 @@
                                     \n is - Evaluates to true if the variables on either side of the operator point to the same object and false otherwise
                                     \n in not - Evaluates to false if the variables on either side of the operator point to the same object and true otherwise\n</string>
 
-    <string name="operators_java">\n + - Addition
+    <string name="operators_java" formatted= "false">\n + - Addition
                                   \n - - Subtraction
                                   \n * - Multiplication
                                   \n / - Division
-                                  \n % - The modulus returns the remainder of a division
+                                  \n &#37; - The modulus returns the remainder of a division
                                   \n ++ - Increment variable by 1
                                   \n &#8211;&#8211; - Decrement variable by 1
                                   \n == - Using two equals in succession tests values for equality
@@ -159,7 +159,7 @@
                                   \n &amp; - Binary AND Operator copies a bit to the result if it exists in both operands
                                   \n | - Binary OR Operator copies a bit if it exists in either operand
                                   \n ^ - Binary XOR Operator copies the bit if it is set in one operand but not both
-                                  \n ~ - Binary Ones Complement Operator is unary and has the effect of 'flipping' bits
+                                  \n ~ - Binary Ones Complement Operator is unary and has the effect of \'flipping\' bits
                                   \n &lt;&lt; - Binary Left Shift Operator. The left operands value is moved left by the number of bits specified by the right operand
                                   \n &gt;&gt; - Binary Right Shift Operator. The left operands value is moved right by the number of bits specified by the right operand
                                   \n &gt;&gt;&gt; - Shift right zero fill operator. The left operands value is moved right by the number of bits specified by the right operand and shifted values are filled up with zeros
@@ -171,7 +171,7 @@
                                   \n *= - Multiply variable by n
                                   \n -= - Subtract n from a variable
                                   \n /= - Divides n with a variable
-                                  \n %= - Takes the modulus using two operands and assign the result to left operand
+                                  \n &#37;= - Takes the modulus using two operands and assign the result to left operand
                                   \n &lt;&lt;= - Left shift AND
                                   \n &gt;&gt;= - Right shift AND
                                   \n &amp;= - Bitwise AND
