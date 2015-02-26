@@ -8,42 +8,31 @@
 
     <!-- This is the scroll view for the activity thingy. -->
     <ScrollView
+        android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        >
+        android:layout_height="fill_parent">
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            >
-
+            android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Include :"
+            android:text="Include:"
             android:id="@+id/textView"
-            android:layout_centerHorizontal="true"
-            android:textSize="30sp" />
-
-
+            android:textSize="30sp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="\nThe main purpose behind the include directive is that it allows libraries of code to be developed which help to ensure that everyone uses the same version of a data layout definition or procedural code throughout a program.\n\nFor example in C/C++ we use:\n#include <stdio.h> // This includes the content of the standard header 'stdio.h'.\n\nWithin PHP the include directive causes another PHP file to be included and evaluated.\n\nModern languages such as Java and C# do not use forward declarations, instead identifiers are recognised automatically from source files and read directly form dynamic library symbols, meaning header files are not needed."
+        android:text="@string/activity_include"
         android:id="@+id/textView200"
         android:layout_marginLeft="4dp"
-        android:layout_marginStart="4dp"
-        android:layout_below="@+id/textView"
-        android:layout_toRightOf="@+id/scrollView"
-        android:layout_toEndOf="@+id/scrollView" />
-
-
-
-
+        android:layout_marginStart="4dp"/>
 
         </LinearLayout>
     </ScrollView>

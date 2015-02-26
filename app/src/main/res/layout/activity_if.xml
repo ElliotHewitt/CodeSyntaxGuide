@@ -11,14 +11,12 @@
     <!-- This is the scroll view for the activity thingy. -->
     <ScrollView
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        >
+        android:layout_height="fill_parent" >
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
-            android:orientation="vertical"
-            >
-
+            android:orientation="vertical">
 
 <TextView
     android:layout_width="wrap_content"

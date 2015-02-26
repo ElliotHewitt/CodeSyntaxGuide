@@ -7,15 +7,24 @@
     <string name="else_if_cplusplus">if(condition1)\n{\n\tstatement1;\n}\nelse if(condition2)\n{\n\tstatement2;\n}\nelse\n{\n\tstatement3;\n}</string>
     <string name="else_if_python">if condition1:\n\t statement1 \nelif condition2:\n\t statement2\nelse:\n\t statement3</string>
     <string name="else_if_java">if(condition1){\n\tstatement1;\n}else if(condition2){\n\tstatement2;\n}else{\n\tstatement3;\n}</string>
-    <string name="types_cplusplus">\nchar - single byte of data\nint - 32 bit interger\nfloat - 4 byte floating point number\ndouble - 8 byte floating point number\nbool - binary true/false value\nvoid - null value\n</string>
-    <string name="types_csharp">\nchar - single byte of data\nint - 32 bit interger\nfloat - 4 byte floating point number\ndouble - 8 byte floating point number\nbool - binary true/false value\nvoid - null value\n</string>
+    <string name="types_cplusplus">\nchar - single byte of data\nint - 32 bit interger\nfloat - 4 byte floating point number\ndouble - 8 byte floating point
+                                    number\nbool - binary true/false value\nvoid - null value\n</string>
+    <string name="types_csharp">\nchar - single byte of data\nint - 32 bit interger\nfloat - 4 byte floating point number\ndouble - 8 byte floating point number
+                                    \nbool - binary true/false value\nvoid - null value\n</string>
     <string name="types_python">\nPython doesn\'t require you to define variable types\n</string>
-    <string name="types_java">\nchar - single byte of data\nint - 32 bit interger\nfloat - 4 byte floating point number\ndouble - 8 byte floating point number\nbool - binary true/false value\nvoid - null value\n</string>
-    <string name="classes_cplusplus">\nclass name_of_class\n{\n\tprivate:\n\t\tcontent only viewable from this class\n\tprotected:\n\t\tcontent only viewable from this type of class\n\tpublic:\n\t\tcontent viewable to anything accessing the class\n
-} object_of_class\n</string>
+    <string name="types_java">\nchar - single byte of data\nint - 32 bit interger\nfloat - 4 byte floating point number\ndouble - 8 byte floating point
+                                number\nbool - binary true/false value\nvoid - null value\n</string>
+    <string name="classes_cplusplus">\nclass name_of_class\n{\n\tprivate:\n\t\tcontent only viewable from this class\n\tprotected:\n\t\tcontent only
+                                        viewable from this type of class\n\tpublic:\n\t\tcontent viewable to anything accessing the class\n
+                                     } object_of_class\n</string>
     <string name="classes_csharp">\nclass name_of_class\n{\n\tcontent of the class\n\tprivacy is declared at the start of each member\n}\n</string>
     <string name="classes_python">\nclass name_of_class:\n\tcontent of the class\n</string>
     <string name="classes_java">\nclass name_of_class {\n\tcontent of the class\n}\n</string>
+    <string name="activity_include">\nThe main purpose behind the include directive is that it allows libraries of code to be developed which help to ensure that
+                                    everyone uses the same version of a data layout definition or procedural code throughout a program.\n\nFor example in C/C++ we use
+                                    :\n#include &lt;stdio.h&gt;" // This includes the content of the standard header 'stdio.h'.\n\nWithin PHP the include directive causes another
+                                    PHP file to be included and evaluated.\n\nModern languages such as Java and C# do not use forward declarations, instead identifiers are recognised
+                                    automatically from source files and read directly form dynamic library symbols, meaning header files are not needed."</string>
 
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
