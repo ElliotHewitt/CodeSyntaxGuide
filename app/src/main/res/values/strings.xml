@@ -186,6 +186,14 @@
 
     <string name="while_java">\nwhile(expression)\n{\n\tstatement(s)\n}\n</string>
 
+    <string name="switch_cplusplus">\nswitch(expression)\n{\n\tcase a:\n\t\tstatements1;\n\t\tbreak;\n\tcaseb:\n\t\tstatements2;\n\t\tbreak;\n}\n</string>
+
+    <string name="switch_csharp">\nswitch(expression){\n\tcase expression:\n\t\tstatements(s);\n\t\tbreak; *this is optional*\n\tcase expression:\n\t\tstatement(s);\n\t\tbreak; *this is optional*\n}\n</string>
+
+    <string name="switch_python">\nPython has no definitive switch-case statement. A simple substitute for this is using a string of if-else blocks, with each condition being what would have been the matching case.\n</string>
+
+    <string name="switch_java">\nswitch(expression){\n\tcase expression:\n\t\tstatements(s);\n\t\tbreak; *this is optional*\n\tcase expression:\n\t\tstatement(s);\n\t\tbreak; *this is optional*\n}\n</string>
+
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="green">#397D02</color>
