@@ -29,20 +29,23 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 style="wrap_content"
-                android:weightSum="1">
+                android:weightSum="1"
+                android:baselineAligned="false">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/title_activity_elseif"
-                    android:id="@+id/elseif_title" />
+                    android:id="@+id/elseif_title"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/title_language_cplusplus"
                     android:id="@+id/cplusplus_title"
-                    android:layout_marginTop="23dp" />
+                    android:layout_marginTop="23dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -56,7 +59,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/title_language_csharp"
                     android:id="@+id/csharp_title"
-                    android:layout_marginTop="28dp" />
+                    android:layout_marginTop="28dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -70,7 +74,8 @@
                     android:layout_height="wrap_content"
                     android:text="@string/title_language_python"
                     android:id="@+id/python_title"
-                    android:layout_marginTop="29dp" />
+                    android:layout_marginTop="29dp"
+                    android:textStyle="bold" />
 
                 <TextView android:text="@string/else_if_python" android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -81,7 +86,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/title_language_java"
-                    android:id="@+id/java_title" />
+                    android:id="@+id/java_title"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
