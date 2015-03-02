@@ -18,7 +18,8 @@ tools:context="teamprojectgroup3.codesyntaxguide.CLASSES">
 
                 <TextView android:text="@string/title_activity_classes" android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/classes_title" />
+                    android:id="@+id/classes_title"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -30,90 +31,50 @@ tools:context="teamprojectgroup3.codesyntaxguide.CLASSES">
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/classes_cplusplus"
-                    android:id="@+id/textView9" />
+                    android:id="@+id/cplusplus_code" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/title_language_csharp"
-                    android:id="@+id/textView10" />
+                    android:id="@+id/csharp_title"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/classes_csharp"
-                    android:id="@+id/textView11" />
+                    android:id="@+id/csharp_code" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/title_language_python"
-                    android:id="@+id/textView15" />
+                    android:id="@+id/python_title"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/classes_python"
-                    android:id="@+id/textView13"
+                    android:id="@+id/python_code"
                     android:singleLine="false" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/title_language_java"
-                    android:id="@+id/textView16" />
+                    android:id="@+id/java_title"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/classes_java"
-                    android:id="@+id/textView14" />
+                    android:id="@+id/java_code" />
 
 
-            <TextView android:text="@string/title_activity_classes" android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/title_language_cplusplus" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/classes_cplusplus" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/title_language_csharp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/classes_csharp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/title_language_python" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/classes_python"
-                android:singleLine="false" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/title_language_java" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/classes_java" />
-        </LinearLayout>
+            </LinearLayout>
 
     </ScrollView>
 
