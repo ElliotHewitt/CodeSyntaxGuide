@@ -1,12 +1,12 @@
 package teamprojectgroup3.codesyntaxguide;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class MENU extends ActionBarActivity {
+public class MENU extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,7 +85,6 @@ public class MENU extends ActionBarActivity {
                 }
             }
         };
-
         //Set the listener
         button.setOnClickListener(listener);
         button2.setOnClickListener(listener);
