@@ -82,6 +82,10 @@ public class MENU extends Activity {
                         Intent intent12 = new Intent(MENU.this, POINTERS.class);
                         startActivity(intent12);
                         break;
+                    case R.id.button13:
+                        Intent intent13 = new Intent(MENU.this, LIBRARIES.class);
+                        startActivity(intent13);
+                        break;
                 }
             }
         };
