@@ -35,7 +35,9 @@
                                     :\n#include &lt;stdio.h>" // This includes the content of the standard header \'stdio.h\'.\n\nWithin PHP the include directive causes another
                                     PHP file to be included and evaluated.\n\nModern languages such as Java and C# do not use forward declarations, instead identifiers are recognised
                                     automatically from source files and read directly form dynamic library symbols, meaning header files are not needed."</string>
-    <string name="operators_csharp" formatted="false">\n = - Using a single equals assigns a value
+
+    <string name="operators_csharp" formatted="false">
+                                    \n = - Using a single equals assigns a value
                                     \n == - Using two equals in succession tests values for equality
                                     \n != - Tests values for inequality
                                     \n * - Multiplication
@@ -58,7 +60,9 @@
                                     \n &lt; - Less than
                                     \n >= - Greater than or equal to
                                     \n &lt;= - Less than or equal to\n</string>
-    <string name="operators_cplusplus" formatted="false">\n + - Addition
+
+    <string name="operators_cplusplus" formatted="false">
+                                       \n + - Addition
                                        \n - - Subtraction
                                        \n * - Multiplication
                                        \n / - Division
@@ -90,7 +94,9 @@
                                        \n &amp;= - Bitwise AND
                                        \n ^= = Bitwise exclusive OR
                                        \n |= = Bitwise inclusive OR\n</string>
-    <string name="operators_python" formatted="false">\n + - Addition
+
+    <string name="operators_python" formatted="false">
+                                    \n + - Addition
                                     \n - - Subtraction
                                     \n * - Multiplication
                                     \n / - Division
@@ -124,7 +130,9 @@
                                     \n not in - Evaluates to true if it does not finds a variable in the specified sequence and false otherwise
                                     \n is - Evaluates to true if the variables on either side of the operator point to the same object and false otherwise
                                     \n in not - Evaluates to false if the variables on either side of the operator point to the same object and true otherwise\n</string>
-    <string name="operators_java" formatted="false">\n + - Addition
+
+    <string name="operators_java" formatted="false">
+                                  \n + - Addition
                                   \n - - Subtraction
                                   \n * - Multiplication
                                   \n / - Division
@@ -160,7 +168,7 @@
                                   \n |= = Bitwise inclusive OR\n</string>
     <string name="while_cplusplus">\nwhile(condition)\n{\n\tstatement(s);\n}\n</string>
     <string name="while_csharp">\nwhile(condition)\n{\n\tstatement(s);\n}\n</string>
-    <string name="while_python">\nwhile expression\n\tstatement(s)\n</string>
+    <string name="while_python">\nwhile expression:\n\tstatement(s)\n</string>
     <string name="while_java">\nwhile(expression)\n{\n\tstatement(s)\n}\n</string>
     <string name="switch_cplusplus">\nswitch(expression)\n{\n\tcase a:\n\t\tstatements1;\n\t\tbreak;\n\tcaseb:\n\t\tstatements2;\n\t\tbreak;\n}\n</string>
     <string name="switch_csharp">\nswitch(expression){\n\tcase expression:\n\t\tstatements(s);\n\t\tbreak; *this is optional*\n\tcase expression:\n\t\tstatement(s);\n\t\tbreak; *this is optional*\n}\n</string>
