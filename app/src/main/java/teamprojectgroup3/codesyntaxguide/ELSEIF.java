@@ -4,16 +4,67 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import android.widget.ExpandableListView;
 
 
 public class ELSEIF extends ActionBarActivity {
+
+    ExpandableListAdapter listAdapter;
+    ExpandableListView expListView;
+    List<String> listDataHeader;
+    HashMap<String, List<String>> listDataChild;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_elseif);
+
+        // get the listview
+        expListView = (ExpandableListView) findViewById(R.id.lvExp);
+
+        // preparing list data
+        prepareListData();
+
+        listAdapter = new ExpandableListAdapter(this, listDataHeader, listDataChild);
+
+        // setting list adapter
+        expListView.setAdapter(listAdapter);
     }
 
+    /*
+     * Preparing the list data
+     */
+    private void prepareListData() {
+        listDataHeader = new ArrayList<String>();
+        listDataChild = new HashMap<String, List<String>>();
+
+        // Adding child data
+        listDataHeader.add("C#");
+        listDataHeader.add("C++");
+        listDataHeader.add("Python");
+        listDataHeader.add("Java");
+
+        // Adding child data
+        List<String> csharp = new ArrayList<String>();
+        csharp.add("if(condition 1)\n{\n\t'statement 1';\n}\nelse if('condition 2')\n{\n\t'statement 2';\n}\nelse\n{\n\t'statement 3';\n}");
+
+        List<String> cplusplus = new ArrayList<String>();
+        cplusplus.add("if('condition 1')\n{\n\t'statement 1';\n}\nelse if('condition 2')\n{\n\t'statement 2';\n}\nelse\n{\n\t'statement 3';\n}");
+
+        List<String> python = new ArrayList<String>();
+        python.add("if 'condition 1':\n\t 'statement 1' \nelif 'condition 2':\n\t 'statement 2'\nelse:\n\t 'statement 3'");
+
+        List<String> java = new ArrayList<String>();
+        java.add("if('condition 1'){\n\t'statement 1';\n}else if('condition 2'){\n\t'statement 2';\n}else{\n\t'statement 3';\n}");
+
+        listDataChild.put(listDataHeader.get(0), csharp); // Header, Child data
+        listDataChild.put(listDataHeader.get(1), cplusplus);
+        listDataChild.put(listDataHeader.get(2), python);
+        listDataChild.put(listDataHeader.get(3), java);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -37,3 +88,4 @@ public class ELSEIF extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 }
+
