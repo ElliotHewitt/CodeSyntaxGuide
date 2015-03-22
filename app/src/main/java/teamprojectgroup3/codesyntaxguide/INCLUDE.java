@@ -10,7 +10,7 @@ import java.util.List;
 import android.widget.ExpandableListView;
 
 
-public class LIBRARIES extends ActionBarActivity {
+public class INCLUDE extends ActionBarActivity {
 
     ExpandableListAdapter listAdapter;
     ExpandableListView expListView;
@@ -42,35 +42,19 @@ public class LIBRARIES extends ActionBarActivity {
         listDataChild = new HashMap<String, List<String>>();
 
         // Adding child data
-        listDataHeader.add("C#");
-        listDataHeader.add("C++");
-        listDataHeader.add("Python");
-        listDataHeader.add("Java");
+        listDataHeader.add("Include");
 
         // Adding child data
-        List<String> csharp = new ArrayList<String>();
-        csharp.add("Work in Progress");
-
-        List<String> cplusplus = new ArrayList<String>();
-        cplusplus.add("Work in Progress");
-
-        List<String> python = new ArrayList<String>();
-        python.add("Work in Progress");
-
-        List<String> java = new ArrayList<String>();
-        java.add("Work in Progress");
-
-        listDataChild.put(listDataHeader.get(0), csharp); // Header, Child data
-        listDataChild.put(listDataHeader.get(1), cplusplus);
-        listDataChild.put(listDataHeader.get(2), python);
-        listDataChild.put(listDataHeader.get(3), java);
+        List<String> include = new ArrayList<String>();
+        include.add("\nThe main purpose behind the include directive is that it allows libraries of code to be developed which help to ensure that everyone uses the same version of a data layout definition or procedural code throughout a program. For example in C/C++ we use: #include <stdio.h> This includes the content of the standard header 'stdio.h'. Within PHP the include directive causes another PHP file to be included and evaluated. Modern languages such as Java and C# do not use forward declarations, instead identifiers are recognised automatically from source files and read directly form dynamic library symbols, meaning header files are not needed.");
+        listDataChild.put(listDataHeader.get(0), include); // Header, Child data
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_libraries, menu);
+        getMenuInflater().inflate(R.menu.menu_include, menu);
         return true;
     }
 

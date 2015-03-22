@@ -89,4 +89,3 @@ public class IF extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 }
-
