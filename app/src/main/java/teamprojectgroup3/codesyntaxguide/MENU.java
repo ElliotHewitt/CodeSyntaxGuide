@@ -13,7 +13,7 @@ public class MENU extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        //Declare Buttons
+        //declare Buttons
         Button button = (Button) findViewById(R.id.button1);
         Button button2 = (Button) findViewById(R.id.button2);
         Button button3 = (Button) findViewById(R.id.button3);
@@ -29,7 +29,7 @@ public class MENU extends Activity {
         Button button13 = (Button) findViewById(R.id.button13);
         Button button14 = (Button) findViewById(R.id.button14);
 
-        //On click of a buttons listener
+        //on click of a buttons listener
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -89,7 +89,8 @@ public class MENU extends Activity {
                 }
             }
         };
-        //Set the listener
+
+        //set the listener
         button.setOnClickListener(listener);
         button2.setOnClickListener(listener);
         button3.setOnClickListener(listener);

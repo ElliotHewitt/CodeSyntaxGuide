@@ -1,29 +1,24 @@
 package teamprojectgroup3.codesyntaxguide;
 
-/**
- * Created by Elliot on 17/03/2015.
- */
+import android.content.Context;
+import android.graphics.Typeface;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseExpandableListAdapter;
+import android.widget.TextView;
 
-        import java.util.HashMap;
-        import java.util.List;
-
-        import android.content.Context;
-        import android.graphics.Typeface;
-        import android.view.LayoutInflater;
-        import android.view.View;
-        import android.view.ViewGroup;
-        import android.widget.BaseExpandableListAdapter;
-        import android.widget.TextView;
+import java.util.HashMap;
+import java.util.List;
 
 public class ExpandableListAdapter extends BaseExpandableListAdapter {
 
     private Context _context;
     private List<String> _listDataHeader; // header titles
-    // child data in format of header title, child title
+    //child data in format of header title, child title
     private HashMap<String, List<String>> _listDataChild;
 
-    public ExpandableListAdapter(Context context, List<String> listDataHeader,
-                                 HashMap<String, List<String>> listChildData) {
+    public ExpandableListAdapter(Context context, List<String> listDataHeader, HashMap<String, List<String>> listChildData) {
         this._context = context;
         this._listDataHeader = listDataHeader;
         this._listDataChild = listChildData;

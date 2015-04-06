@@ -7,15 +7,16 @@ import android.os.Handler;
 
 public class SPLASH extends Activity {
 
-    private final int SPLASH_DISPLAY_LENGTH = 6000;
+    //display for 5 seconds
+    private final int SPLASH_DISPLAY_LENGTH = 5000;
 
     @Override
     public void onCreate(Bundle splash) {
         super.onCreate(splash);
         setContentView(R.layout.splashscreen);
 
-        /* New Handler to start the Menu-Activity 
-         * and close this Splash-Screen after some seconds.*/
+        //handler to start the menu and close this splash after a certain
+        //amount of seconds
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run() {
