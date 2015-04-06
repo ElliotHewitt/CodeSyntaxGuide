@@ -6,7 +6,6 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="teamprojectgroup3.codesyntaxguide.DOWHILE">
 
-    <!-- This is the scroll view for the activity thingy. -->
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" >
