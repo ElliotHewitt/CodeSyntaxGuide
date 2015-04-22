@@ -46,6 +46,7 @@ public class IF extends ActionBarActivity {
         listDataHeader.add("Python");
         listDataHeader.add("Java");
         listDataHeader.add("Perl");
+        listDataHeader.add("PHP");
 
         //adding data to the headers
         List<String> csharp = new ArrayList<String>();
@@ -65,10 +66,14 @@ public class IF extends ActionBarActivity {
                 "   # statement(s) will execute if the given condition is true\n" +
                 "}");
 
+        List<String> php = new ArrayList<String>();
+        php.add("<?php\nif('condition 1'){\n\t'statement 1';\n}\n?>");
+
         listDataChild.put(listDataHeader.get(0), csharp);
         listDataChild.put(listDataHeader.get(1), cplusplus);
         listDataChild.put(listDataHeader.get(2), python);
         listDataChild.put(listDataHeader.get(3), java);
         listDataChild.put(listDataHeader.get(4), Perl);
+        listDataChild.put(listDataHeader.get(5), php);
     }
 }
