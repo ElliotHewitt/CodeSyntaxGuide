@@ -205,5 +205,7 @@
     <string name="title_language_java">JAVA</string>
     <string name="title_activity_splash">SPLASH</string>
     <string name="title_activity_libraries">LIBRARIES</string>
+    <string name="title_activity_helloworld">HELLO WORLD</string>
+    <string name="title_activity_foreach">FOREACH</string>
 
 </resources>

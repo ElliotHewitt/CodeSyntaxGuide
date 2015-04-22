@@ -46,7 +46,6 @@ public class HELLOWORLD extends ActionBarActivity {
         listDataHeader.add("Java");
 
         //adding data to the header
-        //adding data to the headers
         List<String> csharp = new ArrayList<String>();
         csharp.add("STUFF");
 

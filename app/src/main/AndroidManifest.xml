@@ -125,8 +125,17 @@
         </activity>
 
         <activity
-            android:name=".LIBRARIES"
-            android:label="@string/title_activity_libraries"
+            android:name=".HELLOWORLD"
+            android:label="@string/title_activity_helloworld"
+            android:parentActivityName=".MENU" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="teamprojectgroup3.codesyntaxguide.MENU" />
+        </activity>
+
+        <activity
+            android:name=".FOREACH"
+            android:label="@string/title_activity_foreach"
             android:parentActivityName=".MENU" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
