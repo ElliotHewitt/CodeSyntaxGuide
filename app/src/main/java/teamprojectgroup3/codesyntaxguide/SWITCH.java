@@ -46,6 +46,7 @@ public class SWITCH extends ActionBarActivity {
         listDataHeader.add("Python");
         listDataHeader.add("Java");
         listDataHeader.add("Perl");
+        listDataHeader.add("PHP");
 
         //adding data to the headers
         List<String> csharp = new ArrayList<String>();
@@ -78,10 +79,21 @@ public class SWITCH extends ActionBarActivity {
                 "   else              { print \"previous case not true\" }\n" +
                 "}");
 
+        List<String> php = new ArrayList<String>();
+        php.add("<?php\nswitch(expression){\n" +
+                "\tcase expression:\n" +
+                "\t\tstatements(s);\n" +
+                "\t\tbreak; *this is optional*\n" +
+                "\tcase expression:\n" +
+                "\t\tstatement(s);\n" +
+                "\t\tbreak; *this is optional*\n" +
+                "}\n?>");
+
         listDataChild.put(listDataHeader.get(0), csharp);
         listDataChild.put(listDataHeader.get(1), cplusplus);
         listDataChild.put(listDataHeader.get(2), python);
         listDataChild.put(listDataHeader.get(3), java);
         listDataChild.put(listDataHeader.get(4), Perl);
+        listDataChild.put(listDataHeader.get(5), php);
     }
 }
