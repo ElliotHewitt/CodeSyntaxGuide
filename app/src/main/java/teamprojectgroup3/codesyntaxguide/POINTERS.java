@@ -46,19 +46,20 @@ public class POINTERS extends ActionBarActivity {
         listDataHeader.add("Python");
         listDataHeader.add("Java");
         listDataHeader.add("Perl");
+        listDataHeader.add("PHP");
 
         //adding data to the headers
         List<String> csharp = new ArrayList<String>();
-        csharp.add("Declaring a Pointer:\nint* pointer;\n\nPointing a a Variable:\npointer = x;");
+        csharp.add("Declaring a Pointer:\nint* pointer;\n\nPointing to a Variable:\npointer = x;");
 
         List<String> cplusplus = new ArrayList<String>();
-        cplusplus.add("Declaring a Pointer:\nint *pointer;\n\nPointing a a Variable:\npointer = &x;");
+        cplusplus.add("Declaring a Pointer:\nint *pointer;\n\nPointing to a Variable:\npointer = &x;");
 
         List<String> python = new ArrayList<String>();
         python.add("Python does not contain pointers");
 
         List<String> java = new ArrayList<String>();
-        java.add("Declaring a Pointer:\nint* pointer;\n\nPointing a a Variable:\npointer = x;");
+        java.add("Declaring a Pointer:\nint* pointer;\n\nPointing to a Variable:\npointer = x;");
 
         List<String> Perl = new ArrayList<String>();
         Perl.add("#!/usr/bin/perl\n" +
@@ -69,10 +70,14 @@ public class POINTERS extends ActionBarActivity {
                 "\n" +
                 "Read more: http://linuxpoison.blogspot.co.uk/2012/11/perl-script-creating-pointers.html#ixzz3Y3n9oabh");
 
+        List<String> php = new ArrayList<String>();
+        php.add("PHP has no pointers only references");
+
         listDataChild.put(listDataHeader.get(0), csharp);
         listDataChild.put(listDataHeader.get(1), cplusplus);
         listDataChild.put(listDataHeader.get(2), python);
         listDataChild.put(listDataHeader.get(3), java);
         listDataChild.put(listDataHeader.get(4), Perl);
+        listDataChild.put(listDataHeader.get(5), php);
     }
 }
