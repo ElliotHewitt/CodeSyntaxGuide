@@ -45,6 +45,7 @@ public class CLASSES extends ActionBarActivity {
         listDataHeader.add("Python");
         listDataHeader.add("Java");
         listDataHeader.add("Perl");
+        listDataHeader.add("PHP");
 
         //adding data to the headers
         List<String> csharp = new ArrayList<String>();
@@ -82,12 +83,15 @@ public class CLASSES extends ActionBarActivity {
                 "\n" +
                 "1;");
 
+        List<String> php = new ArrayList<String>();
+        php.add("<?php\nclass name_of_class {\n\tcontent of class\n}\n?>");
+
         listDataChild.put(listDataHeader.get(0), csharp);
         listDataChild.put(listDataHeader.get(1), cplusplus);
         listDataChild.put(listDataHeader.get(2), python);
         listDataChild.put(listDataHeader.get(3), java);
         listDataChild.put(listDataHeader.get(4), Perl);
-
+        listDataChild.put(listDataHeader.get(5), php);
     }
 }
 
