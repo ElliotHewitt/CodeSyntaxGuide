@@ -44,6 +44,7 @@ public class CLASSES extends ActionBarActivity {
         listDataHeader.add("C++");
         listDataHeader.add("Python");
         listDataHeader.add("Java");
+        listDataHeader.add("Perl");
 
         //adding data to the headers
         List<String> csharp = new ArrayList<String>();
@@ -58,10 +59,34 @@ public class CLASSES extends ActionBarActivity {
         List<String> java = new ArrayList<String>();
         java.add("class name_of_class {\n\t'content of the class'\n\t'privacy is declared at the start of each member'\n}");
 
+        List<String> Perl = new ArrayList<String>();
+        Perl.add("#!/usr/bin/perl\n" +
+                "package Employee;\n" +
+                "\n" +
+                "sub new\n" +
+                "{\n" +
+                "\tmy $class = shift;\n" +
+                "\n" +
+                "\t\n" +
+                "\tprint \"Creating new $class\\n\";\n" +
+                "\n" +
+                "\n" +
+                "\tmy $self = { };\n" +
+                "\tbless $self;\n" +
+                "\t$self->{\"name\"} = \"\";\n" +
+                "\t$self->{\"id\"} = \"\";\n" +
+                "\t$self->{\"age\"} = 0;\n" +
+                "\treturn $self;\n" +
+                "}\n" +
+                "\n" +
+                "\n" +
+                "1;");
+
         listDataChild.put(listDataHeader.get(0), csharp);
         listDataChild.put(listDataHeader.get(1), cplusplus);
         listDataChild.put(listDataHeader.get(2), python);
         listDataChild.put(listDataHeader.get(3), java);
+        listDataChild.put(listDataHeader.get(4), Perl);
 
     }
 }
