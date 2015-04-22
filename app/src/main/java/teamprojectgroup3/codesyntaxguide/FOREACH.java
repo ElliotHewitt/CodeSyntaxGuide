@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 
 
-public class CLASSES extends ActionBarActivity {
+public class FOREACH extends ActionBarActivity {
 
     //drop down box
     ExpandableListAdapter listAdapter;
@@ -47,26 +47,20 @@ public class CLASSES extends ActionBarActivity {
 
         //adding data to the headers
         List<String> csharp = new ArrayList<String>();
-        csharp.add("class name_of_class\n{\n\t'content of the class'\n\t'privacy is declared at the start of each member'\n}");
+        csharp.add("STUFF");
 
         List<String> cplusplus = new ArrayList<String>();
-        cplusplus.add("class name_of_class\n{\n\tprivate:\n\t\t'content only viewable from this class'\n\tprotected:\n\t\t'content only viewable from this type of class'\n\tpublic:\n\t\t'content viewable to anything accessing the class'\n} object_of_class\n");
+        cplusplus.add("STUFF");
 
         List<String> python = new ArrayList<String>();
-        python.add("class name_of_class:\n\t'content of the class'");
+        python.add("STUFF");
 
         List<String> java = new ArrayList<String>();
-        java.add("class name_of_class {\n\t'content of the class'\n\t'privacy is declared at the start of each member'\n}");
+        java.add("STUFF");
 
         listDataChild.put(listDataHeader.get(0), csharp);
         listDataChild.put(listDataHeader.get(1), cplusplus);
         listDataChild.put(listDataHeader.get(2), python);
         listDataChild.put(listDataHeader.get(3), java);
-
     }
 }
-
-
-
-
-

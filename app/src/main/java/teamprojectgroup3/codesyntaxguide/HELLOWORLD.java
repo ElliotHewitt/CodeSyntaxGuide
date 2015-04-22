@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 
 
-public class LIBRARIES extends ActionBarActivity {
+public class HELLOWORLD extends ActionBarActivity {
 
     //drop down box
     ExpandableListAdapter listAdapter;
@@ -39,24 +39,25 @@ public class LIBRARIES extends ActionBarActivity {
         listDataHeader = new ArrayList<String>();
         listDataChild = new HashMap<String, List<String>>();
 
-        //adding headers
+        //adding header
         listDataHeader.add("C#");
         listDataHeader.add("C++");
         listDataHeader.add("Python");
         listDataHeader.add("Java");
 
+        //adding data to the header
         //adding data to the headers
         List<String> csharp = new ArrayList<String>();
-        csharp.add("Work in Progress");
+        csharp.add("STUFF");
 
         List<String> cplusplus = new ArrayList<String>();
-        cplusplus.add("Work in Progress");
+        cplusplus.add("STUFF");
 
         List<String> python = new ArrayList<String>();
-        python.add("Work in Progress");
+        python.add("STUFF");
 
         List<String> java = new ArrayList<String>();
-        java.add("Work in Progress");
+        java.add("STUFF");
 
         listDataChild.put(listDataHeader.get(0), csharp);
         listDataChild.put(listDataHeader.get(1), cplusplus);
