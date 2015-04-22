@@ -47,16 +47,37 @@ public class HELLOWORLD extends ActionBarActivity {
 
         //adding data to the header
         List<String> csharp = new ArrayList<String>();
-        csharp.add("STUFF");
+        csharp.add("public class HelloWorld\n" +
+                "{\n" +
+                "   public static void Main()\n" +
+                "   {\n" +
+                "      System.Console.WriteLine(\"Hello, World!\");\n" +
+                "   }\n" +
+                "}");
 
         List<String> cplusplus = new ArrayList<String>();
-        cplusplus.add("STUFF");
+        cplusplus.add("int main()\n" +
+                "{\n" +
+                "  std::cout << \"Hello World!\";\n" +
+                "}");
 
         List<String> python = new ArrayList<String>();
-        python.add("STUFF");
+        python.add("In python 3.x. you use\n" +
+                "\n" +
+                "print(\"Hello, World\")\n" +
+                "\n" +
+                "In Python 2.x. you use\n" +
+                "\n" +
+                "print \"Hello, World!\"");
 
         List<String> java = new ArrayList<String>();
-        java.add("STUFF");
+        java.add("class HelloWorld\n" +
+                "{\n" +
+                "   public static void main(String args[])\n" +
+                "   {\n" +
+                "      System.out.println(\"Hello World\");\n" +
+                "   }\n" +
+                "}");
 
         listDataChild.put(listDataHeader.get(0), csharp);
         listDataChild.put(listDataHeader.get(1), cplusplus);

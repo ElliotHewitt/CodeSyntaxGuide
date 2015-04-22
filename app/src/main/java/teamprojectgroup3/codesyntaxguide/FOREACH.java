@@ -47,16 +47,57 @@ public class FOREACH extends ActionBarActivity {
 
         //adding data to the headers
         List<String> csharp = new ArrayList<String>();
-        csharp.add("STUFF");
+        csharp.add("using System;\n" +
+                " \n" +
+                "namespace foreach\n" +
+                "{\n" +
+                "  class Foreach\n" +
+                "   {\n" +
+                "     static void Main(string[] args)\n" +
+                "      {\n" +
+                "        string[] arr = new string[5];\n" +
+                " \n" +
+                "        arr[0] = \"James\";\n" +
+                "        arr[1] = \"Emma\";\n" +
+                "        arr[2] = \"Dave\";\n" +
+                "        arr[3] = \"Elliot\";\n" +
+                "        arr[4] = \"Jake\";\n" +
+                " \n" +
+                "        foreach (string name in arr)\n" +
+                "         {\n" +
+                "           Console.WriteLine(\"Hello \" + name);\n" +
+                "         }\n" +
+                "        Console.ReadLine();\n" +
+                "      }\n" +
+                "   }\n" +
+                "}");
 
         List<String> cplusplus = new ArrayList<String>();
-        cplusplus.add("STUFF");
+        cplusplus.add("using namespace System;\n" +
+                "\n" +
+                "int main(){\n" +
+                "  array<int>^ arr = gcnew array<int>{0,1,2,5,7,8,11};\n" +
+                "  int even=0, odd=0;\n" +
+                "\n" +
+                "  for each (int i in arr) {\n" +
+                "    if (i%2 == 0)  \n" +
+                "      even++;      \n" +
+                "    else \n" +
+                "      odd++;         \n" +
+                "  }\n" +
+                "\n" +
+                "  Console::WriteLine(\"Found {0} Odd Numbers, and {1} Even Numbers.\",\n" +
+                "    odd, even);\n" +
+                "}");
 
         List<String> python = new ArrayList<String>();
-        python.add("STUFF");
+        python.add("for val in array:\n" +
+                "    print(val)");
 
         List<String> java = new ArrayList<String>();
-        java.add("STUFF");
+        java.add("for (type item: iterableCollection) {\n" +
+                "    // Do something to item\n" +
+                "}");
 
         listDataChild.put(listDataHeader.get(0), csharp);
         listDataChild.put(listDataHeader.get(1), cplusplus);
