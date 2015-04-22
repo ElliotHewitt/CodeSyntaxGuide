@@ -44,8 +44,6 @@ public class FOREACH extends ActionBarActivity {
         listDataHeader.add("C++");
         listDataHeader.add("Python");
         listDataHeader.add("Java");
-        listDataHeader.add("PHP");
-        listDataHeader.add("Perl");
 
         //adding data to the headers
         List<String> csharp = new ArrayList<String>();
@@ -101,22 +99,9 @@ public class FOREACH extends ActionBarActivity {
                 "    // Do something to item\n" +
                 "}");
 
-        List<String> PHP = new ArrayList<String>();
-        PHP.add("foreach ($set as $value)\n" +
-                "{\n" +
-                "    // Do something to $value;\n" +
-                "}");
-
-        List<String> Perl = new ArrayList<String>();
-        Perl.add("foreach (1, 2, 3, 4) {\n" +
-                "    print $_;\n" +
-                "}");
-
         listDataChild.put(listDataHeader.get(0), csharp);
         listDataChild.put(listDataHeader.get(1), cplusplus);
         listDataChild.put(listDataHeader.get(2), python);
         listDataChild.put(listDataHeader.get(3), java);
-        listDataChild.put(listDataHeader.get(4), PHP);
-        listDataChild.put(listDataHeader.get(4), Perl);
     }
 }
