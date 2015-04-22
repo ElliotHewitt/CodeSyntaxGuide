@@ -1,3 +1,4 @@
+//Created by Emma Fearn
 package teamprojectgroup3.codesyntaxguide;
 
 import android.os.Bundle;
@@ -44,6 +45,7 @@ public class SWITCH extends ActionBarActivity {
         listDataHeader.add("C++");
         listDataHeader.add("Python");
         listDataHeader.add("Java");
+        listDataHeader.add("Perl");
 
         //adding data to the headers
         List<String> csharp = new ArrayList<String>();
@@ -58,9 +60,28 @@ public class SWITCH extends ActionBarActivity {
         List<String> java = new ArrayList<String>();
         java.add("switch(expression){\n\tcase expression:\n\t\tstatements(s);\n\t\tbreak; *this is optional*\n\tcase expression:\n\t\tstatement(s);\n\t\tbreak; *this is optional*\n}");
 
+        List<String> Perl = new ArrayList<String>();
+        Perl.add("#!/usr/local/bin/perl\n" +
+                "\n" +
+                "use Switch;\n" +
+                "\n" +
+                "$var = 10;\n" +
+                "@array = (10, 20, 30);\n" +
+                "%hash = ('key1' => 10, 'key2' => 20);\n" +
+                "\n" +
+                "switch($var){\n" +
+                "   case 10           { print \"number 100\\n\"; next; }\n" +
+                "   case \"a\"          { print \"string a\" }\n" +
+                "   case [1..10,42]   { print \"number in list\" }\n" +
+                "   case (\\@array)    { print \"number in list\" }\n" +
+                "   case (\\%hash)     { print \"entry in hash\" }\n" +
+                "   else              { print \"previous case not true\" }\n" +
+                "}");
+
         listDataChild.put(listDataHeader.get(0), csharp);
         listDataChild.put(listDataHeader.get(1), cplusplus);
         listDataChild.put(listDataHeader.get(2), python);
         listDataChild.put(listDataHeader.get(3), java);
+        listDataChild.put(listDataHeader.get(4), Perl);
     }
 }

@@ -1,3 +1,4 @@
+//Created by Elliot Hewitt
 package teamprojectgroup3.codesyntaxguide;
 
 import android.os.Bundle;
@@ -7,7 +8,6 @@ import android.widget.ExpandableListView;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
 
 public class ELSEIF extends ActionBarActivity {
 
@@ -44,6 +44,7 @@ public class ELSEIF extends ActionBarActivity {
         listDataHeader.add("C++");
         listDataHeader.add("Python");
         listDataHeader.add("Java");
+        listDataHeader.add("Perl");
 
         //adding data to the headers
         List<String> csharp = new ArrayList<String>();
@@ -58,9 +59,19 @@ public class ELSEIF extends ActionBarActivity {
         List<String> java = new ArrayList<String>();
         java.add("if('condition 1'){\n\t'statement 1';\n}else if('condition 2'){\n\t'statement 2';\n}else{\n\t'statement 3';\n}");
 
+        List<String> Perl = new ArrayList<String>();
+        Perl.add(" if ($something) {\n" +
+                "        do_something();\n" +
+                "    } elsif ($another_something) {\n" +
+                "        do_another_thing();\n" +
+                "    } else {\n" +
+                "        do_something_else();\n" +
+                "    }");
+
         listDataChild.put(listDataHeader.get(0), csharp); // Header, Child data
         listDataChild.put(listDataHeader.get(1), cplusplus);
         listDataChild.put(listDataHeader.get(2), python);
         listDataChild.put(listDataHeader.get(3), java);
+        listDataChild.put(listDataHeader.get(4), Perl);
     }
 }

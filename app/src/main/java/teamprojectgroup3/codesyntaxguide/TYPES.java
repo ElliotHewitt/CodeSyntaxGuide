@@ -1,3 +1,4 @@
+//Created by Elliot Hewitt
 package teamprojectgroup3.codesyntaxguide;
 
 import android.os.Bundle;
@@ -44,6 +45,7 @@ public class TYPES extends ActionBarActivity {
         listDataHeader.add("C++");
         listDataHeader.add("Python");
         listDataHeader.add("Java");
+        listDataHeader.add("Perl");
 
         //adding data to the headers
         List<String> csharp = new ArrayList<String>();
@@ -73,9 +75,14 @@ public class TYPES extends ActionBarActivity {
                 "bool - binary true/false value\n" +
                 "void - null value");
 
+        List<String> Perl = new ArrayList<String>();
+        Perl.add("Perl is loosely typed language and there is no need to specify a type for your data while using in your program." +
+                 "The Perl interpreter will choose the type based on the context of the data itself.");
+
         listDataChild.put(listDataHeader.get(0), csharp);
         listDataChild.put(listDataHeader.get(1), cplusplus);
         listDataChild.put(listDataHeader.get(2), python);
         listDataChild.put(listDataHeader.get(3), java);
+        listDataChild.put(listDataHeader.get(4), Perl);
     }
 }

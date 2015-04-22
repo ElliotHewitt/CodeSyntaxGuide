@@ -1,3 +1,4 @@
+//Created by Elliot Hewitt
 package teamprojectgroup3.codesyntaxguide;
 
 import android.os.Bundle;
@@ -7,7 +8,6 @@ import android.widget.ExpandableListView;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
 
 public class CLASSES extends ActionBarActivity {
 

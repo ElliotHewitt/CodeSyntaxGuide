@@ -1,3 +1,4 @@
+//Created by Emma Fearn
 package teamprojectgroup3.codesyntaxguide;
 
 import android.os.Bundle;
@@ -44,6 +45,7 @@ public class FOREACH extends ActionBarActivity {
         listDataHeader.add("C++");
         listDataHeader.add("Python");
         listDataHeader.add("Java");
+        listDataHeader.add("Perl");
 
         //adding data to the headers
         List<String> csharp = new ArrayList<String>();
@@ -99,9 +101,15 @@ public class FOREACH extends ActionBarActivity {
                 "    // Do something to item\n" +
                 "}");
 
+        List<String> Perl = new ArrayList<String>();
+        Perl.add("foreach var (list) {\n" +
+                "...\n" +
+                "}");
+
         listDataChild.put(listDataHeader.get(0), csharp);
         listDataChild.put(listDataHeader.get(1), cplusplus);
         listDataChild.put(listDataHeader.get(2), python);
         listDataChild.put(listDataHeader.get(3), java);
+        listDataChild.put(listDataHeader.get(4), Perl);
     }
 }

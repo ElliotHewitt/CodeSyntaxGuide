@@ -1,3 +1,4 @@
+//Created by James Pratt
 package teamprojectgroup3.codesyntaxguide;
 
 import android.os.Bundle;
@@ -44,6 +45,7 @@ public class IF extends ActionBarActivity {
         listDataHeader.add("C++");
         listDataHeader.add("Python");
         listDataHeader.add("Java");
+        listDataHeader.add("Perl");
 
         //adding data to the headers
         List<String> csharp = new ArrayList<String>();
@@ -58,9 +60,15 @@ public class IF extends ActionBarActivity {
         List<String> java = new ArrayList<String>();
         java.add("if('condition 1'){\n\t'statement 1';\n}");
 
+        List<String> Perl = new ArrayList<String>();
+        Perl.add("if(boolean_expression){\n" +
+                "   # statement(s) will execute if the given condition is true\n" +
+                "}");
+
         listDataChild.put(listDataHeader.get(0), csharp);
         listDataChild.put(listDataHeader.get(1), cplusplus);
         listDataChild.put(listDataHeader.get(2), python);
         listDataChild.put(listDataHeader.get(3), java);
+        listDataChild.put(listDataHeader.get(4), Perl);
     }
 }

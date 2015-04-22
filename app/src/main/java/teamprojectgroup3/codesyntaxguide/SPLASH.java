@@ -1,3 +1,4 @@
+//Created by Emma Fearn
 package teamprojectgroup3.codesyntaxguide;
 
 import android.app.Activity;
@@ -8,7 +9,7 @@ import android.os.Handler;
 public class SPLASH extends Activity {
 
     //display for 5 seconds
-    private final int SPLASH_DISPLAY_LENGTH = 3000;
+    private final int SPLASH_DISPLAY_LENGTH = 2000;
 
     @Override
     public void onCreate(Bundle splash) {

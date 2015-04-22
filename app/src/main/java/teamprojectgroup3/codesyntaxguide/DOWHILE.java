@@ -1,3 +1,4 @@
+//Created by James Pratt
 package teamprojectgroup3.codesyntaxguide;
 
 import android.os.Bundle;
@@ -44,6 +45,7 @@ public class DOWHILE extends ActionBarActivity {
         listDataHeader.add("C++");
         listDataHeader.add("Python");
         listDataHeader.add("Java");
+        listDataHeader.add("Perl");
 
         //adding data to the headers
         List<String> csharp = new ArrayList<String>();
@@ -58,9 +60,16 @@ public class DOWHILE extends ActionBarActivity {
         List<String> java = new ArrayList<String>();
         java.add("do{\n\t'thing to do'\n}while('condition');");
 
+        List<String> Perl = new ArrayList<String>();
+        Perl.add("do\n" +
+                "{\n" +
+                "   statement(s);\n" +
+                "}while( condition );");
+
         listDataChild.put(listDataHeader.get(0), csharp);
         listDataChild.put(listDataHeader.get(1), cplusplus);
         listDataChild.put(listDataHeader.get(2), python);
         listDataChild.put(listDataHeader.get(3), java);
+        listDataChild.put(listDataHeader.get(4), Perl);
     }
 }
