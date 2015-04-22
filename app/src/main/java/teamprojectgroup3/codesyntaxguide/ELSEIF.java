@@ -1,17 +1,17 @@
+//Created by Elliot Hewitt
 package teamprojectgroup3.codesyntaxguide;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.support.v7.app.ActionBarActivity;
+import android.widget.ExpandableListView;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import android.widget.ExpandableListView;
-
 
 public class ELSEIF extends ActionBarActivity {
 
+    //drop down box
     ExpandableListAdapter listAdapter;
     ExpandableListView expListView;
     List<String> listDataHeader;
@@ -22,32 +22,31 @@ public class ELSEIF extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_elseif);
 
-        // get the listview
+        //get the listview
         expListView = (ExpandableListView) findViewById(R.id.lvExp);
 
-        // preparing list data
+        //preparing list data
         prepareListData();
 
         listAdapter = new ExpandableListAdapter(this, listDataHeader, listDataChild);
 
-        // setting list adapter
+        // etting list adapter
         expListView.setAdapter(listAdapter);
     }
 
-    /*
-     * Preparing the list data
-     */
+    //preparing the data for the expandable list
     private void prepareListData() {
         listDataHeader = new ArrayList<String>();
         listDataChild = new HashMap<String, List<String>>();
 
-        // Adding child data
+        //adding headers
         listDataHeader.add("C#");
         listDataHeader.add("C++");
         listDataHeader.add("Python");
         listDataHeader.add("Java");
+        listDataHeader.add("Perl");
 
-        // Adding child data
+        //adding data to the headers
         List<String> csharp = new ArrayList<String>();
         csharp.add("if(condition 1)\n{\n\t'statement 1';\n}\nelse if('condition 2')\n{\n\t'statement 2';\n}\nelse\n{\n\t'statement 3';\n}");
 
@@ -60,32 +59,19 @@ public class ELSEIF extends ActionBarActivity {
         List<String> java = new ArrayList<String>();
         java.add("if('condition 1'){\n\t'statement 1';\n}else if('condition 2'){\n\t'statement 2';\n}else{\n\t'statement 3';\n}");
 
+        List<String> Perl = new ArrayList<String>();
+        Perl.add(" if ($something) {\n" +
+                "        do_something();\n" +
+                "    } elsif ($another_something) {\n" +
+                "        do_another_thing();\n" +
+                "    } else {\n" +
+                "        do_something_else();\n" +
+                "    }");
+
         listDataChild.put(listDataHeader.get(0), csharp); // Header, Child data
         listDataChild.put(listDataHeader.get(1), cplusplus);
         listDataChild.put(listDataHeader.get(2), python);
         listDataChild.put(listDataHeader.get(3), java);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_elseif, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
+        listDataChild.put(listDataHeader.get(4), Perl);
     }
 }
-

@@ -1,19 +1,20 @@
+//Created by Emma Fearn
 package teamprojectgroup3.codesyntaxguide;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class MENU extends ActionBarActivity {
+public class MENU extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        //Declare Buttons
+        //declare Buttons
         Button button = (Button) findViewById(R.id.button1);
         Button button2 = (Button) findViewById(R.id.button2);
         Button button3 = (Button) findViewById(R.id.button3);
@@ -29,7 +30,7 @@ public class MENU extends ActionBarActivity {
         Button button13 = (Button) findViewById(R.id.button13);
         Button button14 = (Button) findViewById(R.id.button14);
 
-        //On click of a buttons listener
+        //on click of a buttons listener
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,11 +83,18 @@ public class MENU extends ActionBarActivity {
                         Intent intent12 = new Intent(MENU.this, POINTERS.class);
                         startActivity(intent12);
                         break;
+                    case R.id.button13:
+                        Intent intent13 = new Intent(MENU.this, HELLOWORLD.class);
+                        startActivity(intent13);
+                        break;
+                    case R.id.button14:
+                        Intent intent14 = new Intent(MENU.this, FOREACH.class);
+                        startActivity(intent14);
                 }
             }
         };
 
-        //Set the listener
+        //set the listener
         button.setOnClickListener(listener);
         button2.setOnClickListener(listener);
         button3.setOnClickListener(listener);
