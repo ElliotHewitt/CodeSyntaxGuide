@@ -226,10 +226,34 @@ public class OPERATORS extends ActionBarActivity {
                 "–– - Decrement variable by 1\n" +
                 "-> - The arrow operator is mostly used in dereferencing a method or variable from an object or a class name");
 
+        List<String> php = new ArrayList<String>();
+        php.add("+ - Addition\n" +
+                "- - Subtraction\n" +
+                "* - Multiplication\n" +
+                "/ - Division\n" +
+                "** - Exponent - Performs exponential (power) calculation on operators\n" +
+                "% - The modulus returns the remainder of a division\n" +
+                "== - Using two equals in succession tests values for equality\n" +
+                "=== - Using three equals tests if the values are identical\n" +
+                "!= - Tests values for inequality\n" +
+                "<> - Checks if the value of two operands are equal or not, and returns -1, 0, or 1 depending on whether the left argument is numerically less than, equal to, or greater than the right argument\n" +
+                ">= - Greater than or equal to\n" +
+                "<= - Less than or equal to\n" +
+                "> - Greater than\n" +
+                "< - Less than\n" +
+                "++ - Increment variable by 1\n" +
+                "–– - Decrement variable by 1\n" +
+                "and - Logical AND\n" +
+                "or - Logical OR\n" +
+                "&& - Logical AND" +
+                "|| - Logical OR\n" +
+                ". - Concatenates two strings");
+
         listDataChild.put(listDataHeader.get(0), csharp);
         listDataChild.put(listDataHeader.get(1), cplusplus);
         listDataChild.put(listDataHeader.get(2), python);
         listDataChild.put(listDataHeader.get(3), java);
         listDataChild.put(listDataHeader.get(4), Perl);
+        listDataChild.put(listDataHeader.get(5), php);
     }
 }
